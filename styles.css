@@ -54,8 +54,23 @@ cursor: pointer;
 .heading-banner {
     display: flex;
     justify-content: center;
+
 }
-.banner img {
-    width:45%;
-    border-radius: 30px;
+.heading-banner img {
+    width: 45%;
+        border-radius: 30px;
+        margin-right: 50%;
+}
+
+.banner{
+display: flex;
+justify-content: space-between;
+}
+.banner h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-left:5%;
+}
+.banner h3 {
+    font-size: 1rem;
 }
