@@ -6,13 +6,14 @@
 }
 
 
+
 * {
  margin: auto;
  padding: 0;
  font-family: 'Inter',sans-serif;
 }
 body{
-    background-color: rgb(252, 252, 250);
+    background-color: white;
 }
 
 header{
@@ -26,11 +27,22 @@ header{
 }
 .logo{
     display: flex;
-    margin-left:-10%;
+    margin-left:-60%;
     font-size: 4rem;
+    position: absolute;
     font-family: 'Libre Baskerville',serif;
-
+    animation: slidein 1.5s infinite;
 }
+@keyframes slidein {
+from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .menu-list{
     display: flex;
     list-style: none;
@@ -47,30 +59,37 @@ a {
         color: black;
 }
 a:hover{
-color:coral;
+color:white;
 cursor: pointer;
+border-radius: 50px;
+padding: 8px 8px 8px 8px;
+background-color: rgb(82, 111, 74);
 }
 
 .heading-banner {
     display: flex;
     justify-content: center;
+    flex-direction: row;
 
 }
 .heading-banner img {
-    width: 45%;
-        border-radius: 30px;
-        margin-right: 50%;
+        width: 45%;
+        border-radius: 20px;
+        margin-right: -10%;
 }
-
+.heading-banner h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color:rgb(82, 111, 74);
+    font-family: 'Libre Baskerville',serif ;
+    font-weight: bolder;
+}
 .banner{
 display: flex;
 justify-content: space-between;
 }
-.banner h2 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-left:5%;
-}
+
 .banner h3 {
     font-size: 1rem;
 }
+
